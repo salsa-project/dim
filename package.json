@@ -1,0 +1,15 @@
+{
+  "name": "@mrsalsa/dim",
+  "version": "1.0.0",
+  "description": "dependecy injection module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dependency",
+    "injection"
+  ],
+  "author": "MrSalsa",
+  "license": "MIT"
+}
