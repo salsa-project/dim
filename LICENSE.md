@@ -1,34 +1,3 @@
-
-# DIM
-
-Tiny Dependency Injection Module for small scale project using node.js
-
-## How to install
-    npm i @mrsalsa/dim
-
-## How to use it
-    const Dinjector = require('@mrsalsa/dim')
-    
-    // register (Mailer) for later use
-    Dinjector.set('Mailer', Mailer);
-
-    // using 'Mailer'
-    const Mailer = Dinjector.get('Mailer');
-
-# Contribution
-Any Kind of making this tiny module effective are WELCOME :)
-
-## How to contribute
-- Fork it
-- clone it in your local machine
-- create new branch for your feature
-- pull request
-- your pull will verified in this stage
-- merge your pull
-- DONE , you are free to delete your new branch
-- Same steps if you want to add more features
-
-# License
 MIT License
 
 Copyright (c) [2021] [salsa-project]
