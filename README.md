@@ -4,16 +4,44 @@
 Tiny Dependency Injection Module for small scale project using node.js
 
 ## How to install
-    npm i @mrsalsa/dim
+```javscript
+npm i @mrsalsa/dim
+```
 
 ## How to use it
-    const Dinjector = require('@mrsalsa/dim')
+```javscript
+const Dinjector = require('@mrsalsa/dim')
     
-    // register (Mailer) for later use
-    Dinjector.set('Mailer', Mailer);
+let container = new Dinjector();
 
-    // using 'Mailer'
-    const Mailer = Dinjector.get('Mailer');
+// register (service/s) for later use  
+// you can put as many services as you want
+container.set('services', service1, service2, service3);
+    
+// another set
+container.set('Mailer', Mailer);
+```
+
+## 'get' the service from the container as easy as :
+```javscript
+let service1 = container.get('Mailer');
+```
+
+## check if the container had your service :
+```javscript
+console.log(container.isExist('Mailer')) // output: true
+```
+
+## get the size(length) of your container : 
+```javscript
+console.log(container.size()) // output ex: 2
+```
+## remove the any record from your container :
+```javscript
+container.remove('Mailer)
+```
+
+Thats all For Now , Simple , Tiny and easy to use .
 
 # Contribution
 Any Kind of making this tiny module effective are WELCOME :)
